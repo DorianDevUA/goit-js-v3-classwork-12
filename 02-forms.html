@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Подія відправки форми</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <p><a href="/">На головну</a></p>
+
+    <!-- Подія відправки(сабміта) форми -->
+    <form class="js-register-form" autocomplete="off">
+      <div role="group">
+        <label>
+          Пошта
+          <input type="email" name="email" />
+        </label>
+        <label>
+          Пароль
+          <input name="password" type="password" />
+        </label>
+      </div>
+
+      <br />
+      <div role="group">
+        <b>Тип підписки:</b>
+        <label>
+          <input type="radio" name="subscription" value="free" />
+          Free
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="basic" />
+          Basic
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="pro" />
+          Pro
+        </label>
+      </div>
+
+      <br />
+      <button type="submit">Зареєструватися</button>
+    </form>
+
+    <script src="./js/02-forms.js" type="module"></script>
+  </body>
+</html>
